@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <title>Registration</title>
+</head>
+<body>
+  <header>
+    <h1>CSC 317 Website</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="postvideo.html">PostVideo</a></li>
+          <li><a href="viewpost.html">ViewPost</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" name="username" 
+        id="username" placeholder="Username" required/>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" 
+        id="email" placeholder="Email" required/>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" 
+        id="password" placeholder="Password" required/>
+
+        <br>
+        <label for="Re-enter password">Re-enter Password:</label>
+        <input type="password" name="Re-enter password" 
+        id="Re-enter password" placeholder="Re-enter password" required/>  
+
+        <br>
+        <label for="age-check">
+        <input type="checkbox" name="age-check" id="age-check" required>
+        I am 13 years old or older.
+        </label>
+
+        <br>
+        <label for="term-check">
+        <input type="checkbox" name="term-check" id="term-check" required>
+        Please accept <a href="#">Terms of Service</a> and <a href="#">Privacy rules</a>
+        </label>
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>  
+  </main>
+
+  <footer>
+    Nghi Nguyen &copy; 2023.
+  </footer>
+</body>
+</html>
