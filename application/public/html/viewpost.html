@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0" />
     <title>ViewVideo</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
   <header>
@@ -16,32 +17,37 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="registration.html">Registration</a></li>
-          <li><a href="postvideo.html">PostVideo</a></li>
-          <li><a href="viewpost.html">ViewPost</a></li>
+          <li><a href="postvideo.html">Post Video</a></li>
+          <li><a href="viewpost.html">View Post</a></li>
         </ul>
       </nav>
   </header>
 
   <main>
     <h2>View Post</h2>
-    <form>
-        <video controls width="290" height="150">
+    <form class="container">
+
+        <video class="video" controls>
             <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
-        <p> Video Title:</p>
-        <p> Video Author:</p>
-        <p> Video Creation Time:</p>
-        <p> Video Description:</p>
-
+      
+        <div class="video-information">  
+          <p> Video Title:</p>
+          <p> Video Author:</p>
+          <p> Video Creation Time:</p>
+          <p> Video Description:</p>
+        </div>
+      
+      <div class="comment-box">
         <textarea id="comment-input" placeholder="Write your comment..." ></textarea>
-        <input type="submit" value="Submit Comment">
+        <input class="button" type="submit" value="Send Comment">
+      </div>
 
     </form>  
   </main>
 
-  <footer>
+  <footer class="footer">
     Nghi Nguyen &copy; 2023.
   </footer>
 </body>
