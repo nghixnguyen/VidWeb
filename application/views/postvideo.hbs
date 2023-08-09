@@ -1,6 +1,7 @@
   <main>
     <h2>Post a video</h2>
-    <form class="container">
+    <form class="container" action = "/posts/create" 
+    method="post" enctype="multipart/form-data">
       <div class="input-box">
         <label for="title">Title:</label>
         <input type="text" name="title" id="title" required/>
@@ -14,12 +15,12 @@
       
       <div class="input-video">
         <label for="video">Video:</label>
-        <input type="file" name="video" id="video" accept="video/*" required>
+        <input type="file" name="uploadVideo" id="video" accept="video/*" required>
       </div>
 
       <div class="input-checkbox">
         <label for="accept-term">
-        <input type="checkbox" name="accept-term" id="accept-term" required>
+        <input type="checkbox" name="aupCheck" id="accept-term" required>
         I accept the Acceptable Use Policy for uploading videos.
         </label>
       </div>

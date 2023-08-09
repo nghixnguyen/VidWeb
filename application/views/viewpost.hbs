@@ -1,23 +1,49 @@
   <main>
     <h2>View Post</h2>
-    <form class="container">
+    <div class="container">
 
-        <video class="video" controls>
-            <source src="video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-      
-        <div class="video-information">  
-          <p> Video Title:</p>
-          <p> Video Author:</p>
-          <p> Video Creation Time:</p>
-          <p> Video Description:</p>
+      <video class="video" controls>
+          <source src="/{{post.video}}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    
+      <div class="video-information">  
+        <div class="video-title">
+          <p>{{post.title}}</p>
         </div>
+
+        <div class="video-author">
+          Author: {{post.username}}
+        </div>
+
+        <div class="video-time">
+          {{ formatDateString post.createAt}}
+        </div>
+
+        <div class="video-desciption">          
+          <p> Video Description: {{post.description}} </p>
+        </div>
+      </div>
       
       <div class="comment-box">
-        <textarea id="comment-input" placeholder="Write your comment..." ></textarea>
-        <input class="button" type="submit" value="Send Comment">
+        <textarea id="comment-input" placeholder="Write your comment..." 
+          data-postid="{{post.id}}"></textarea>
+        <input class="button" id="comment-button" type="submit" 
+          value="Send Comment" data-postid="{{post.id}}" >
+        {{!-- <i class="button" aria-hidden="true"></i> --}}
+      </div>
+      {{!-- {{log post.comments}} --}}
+      <div id="comments-list" class = "comments">
+          {{#each post.comments}}
+            {{> comment this}}
+          {{/each}}
+
+        {{!-- <div class = "comment">
+          <strong class="comment-author">anotherusername</strong>
+          <span class="comment-data">2022, Dec 12</span>
+          <div class="comment-text">This is a sample comment. This is a long comment. This is a cool video. </div>
+        </div> --}}
       </div>
 
-    </form>  
+    </div>  
   </main>

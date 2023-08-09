@@ -41,6 +41,14 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li form button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+}
+
 .button{
   border: none;
   border-radius: .35rem;
@@ -85,10 +93,47 @@ video{
   margin: 0% 0%;
 }
 
+.video-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.video-author {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.video-time {
+  font-size: .9rem;
+  color: #777;
+}
+
 .comment-box{
   display: flex;
   flex-direction: column;
   gap: .2rem;
+}
+
+.comments{
+  margin: 0% 25%;
+}
+
+.comment {
+  padding: .6rem;
+  margin-top: 1rem;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-date {
+  font-size: .9rem;
+  color: #777;
+}
+
+.comment-text {
+  margin-top: .5rem;
 }
 
 .linked-text{
@@ -154,6 +199,7 @@ video{
   /* overflow:auto; */
 }
 
+
 .photo-card {
   display: flex;
   flex-direction: column;
@@ -187,4 +233,42 @@ video{
   font-size: 0.9rem;
   padding: 0.6rem;
   text-align: center;
+}
+
+.card-title{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding: auto;
+}
+
+.card-title:hover{
+  text-decoration: underline;
+}
+
+.card-img:hover{
+  transform: scale(1.02);
+}
+
+#flash-message{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 3%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+#alert-danger {
+  color: #f00;
+  background-color: rgba(255, 0, 0, 0.1);
+
+}
+
+#alert-success {
+  color: #008000;
+  background-color: rgba(0, 0, 255, 0.1);
 }

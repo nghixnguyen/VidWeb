@@ -1,0 +1,8 @@
+{{log this}}
+<div id="flash-message">
+    {{#if messages.error}}
+        <div id ="alert-danger">{{messages.error}}</div>
+    {{else}}
+        <div id ="alert-success">{{messages.success}}</div>
+    {{/if}}
+</div>

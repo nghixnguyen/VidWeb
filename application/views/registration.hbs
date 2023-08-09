@@ -1,11 +1,15 @@
   <main>
     <h2>Create account </h2>
-    <form id="reg-form" class="container">
+    <form id="reg-form" class="container" action="/users/registration"
+    method="post" enctype="application/x-www-form-urlencoded">
 
       <div class="input-box">
         <label for="username">Username:</label>
         <input type="text" name="username" 
         id="username" placeholder="Username" required/>
+
+        {{!-- id="username" placeholder="Username" value={{username}} required/> --}}
+        
       </div>
 
       <div class="input-box">
@@ -18,24 +22,25 @@
         <label for="password">Password:</label>
         <input type="password" name="password" 
         id="password" placeholder="Password" required/>
+        {{perrors}}
       </div>
 
       <div class="input-box">
-        <label for="Re-enter password">Re-enter Password:</label>
-        <input type="password" name="Re-enter password" 
-        id="re-enter password" placeholder="Re-enter password" required/>  
+        <label for="cpassword">Re-enter Password:</label>
+        <input type="password" name="confirmPassword" 
+        id="cpassword" placeholder="Re-enter password" required/>  
       </div>
 
       <div class="input-checkbox">
         <label for="age-check">
-        <input type="checkbox" name="age-check" id="age-check" required>
+        <input type="checkbox" name="ageCheck" id="age-check" required>
         I am 13 years old or older.
         </label>
       </div>
 
       <div class="input-checkbox">
         <label for="term-check">
-        <input type="checkbox" name="term-check" id="term-check" required>
+        <input type="checkbox" name="termCheck" id="term-check" required>
         Please accept <a class="linked-text" href="#">Terms of Service</a> 
         and <a class="linked-text" href="#">Privacy rules</a>
         </label>

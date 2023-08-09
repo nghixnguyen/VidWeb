@@ -15,6 +15,9 @@
 
   </head>
   <body>
+    {{#if (isNotEmpty this.messages)}}
+      {{> flashmessage this}}
+    {{/if}}
     {{> header}}
     {{{body}}}
     {{> footer}}

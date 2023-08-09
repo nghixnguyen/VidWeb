@@ -6,14 +6,14 @@ document.getElementById('password').addEventListener('input', function(ev) {
     validateField(ev.target, isPasswordValidFormat);
 });
 
-document.getElementById('re-enter password').addEventListener('input', function(ev) {
+document.getElementById('cpassword').addEventListener('input', function(ev) {
     validateField(ev.target, validateReEnterPassword);
 });
 
 document.getElementById('reg-form').addEventListener('submit', function(ev) {
     var usernameInput = document.getElementById('username');
     var passwordInput = document.getElementById('password');
-    var reEnterPasswordInput = document.getElementById('re-enter password');
+    var reEnterPasswordInput = document.getElementById('cpassword');
 
     var isUsernameValid = validateField(usernameInput, isUsernameValidFormat);
     var isPasswordValid = validateField(passwordInput, isPasswordValidFormat);
@@ -34,7 +34,7 @@ document.getElementById('reg-form').addEventListener('submit', function(ev) {
         }
 
         if (!isReEnterPasswordValid) {
-            invalidFields.push("Re-enter Password");
+            invalidFields.push("cpassword");
         }
 
         for (var i = 0; i < invalidFields.length; i++) {
@@ -45,7 +45,7 @@ document.getElementById('reg-form').addEventListener('submit', function(ev) {
                 case "Password":
                     errorMessage += "- Invalid Password\n";
                     break;
-                case "Re-enter Password":
+                case "cpassword":
                     errorMessage += "- Invalid Re-enter Password\n";
                     break;
             }

@@ -2,11 +2,28 @@
     <h1>CSC 317 Website</h1>
     <nav>
         <ul>
-          <li><a href="/index">Home</a></li>
-          <li><a href="/login">Login</a></li>
-          <li><a href="/registration">Registration</a></li>
+          <li><a href="/">Home</a></li>
+          <li class="search-bar">
+            <form class="search-bar" action="/posts/search" method="get" >
+              <input id="search-text" class = "search-text" type="text" 
+              name="key" value="{{searchValue}}" placeholder="Search..."/>
+              <button id = "search-button" type="submit" >Search</button>
+            </form>
+            
+          </li>
+          {{!-- <li><a href="/registration">Registration</a></li> --}}
           <li><a href="/postvideo">Post Video</a></li>
-          <li><a href="/viewpost">View Post</a></li>
+
+          {{#if isLoggedIn}}
+            <li>
+              <form action="/users/logout" method="post">
+                <button type="submit">Log Out</button>
+                </form>
+            </li>
+          {{else}}
+            <li><a href="/login">Login</a></li>
+          {{/if}}
         </ul>
       </nav>
   </header>
+  {{log this}}
