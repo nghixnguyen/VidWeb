@@ -19,9 +19,13 @@ Please follow the instructions below and fill in the information requested when 
 # Build/Run Instructions
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. npm install 
+2. set up these environment variables in .env folder:
+    host: DB_HOST,
+    user: DB_USER,
+    password: DB_PASSWORD,
+    database: DB_NAME,
+3. npm run builddb
 
 ## Run Instructions
-1. steps here
-2. steps here 
+1. npm start
