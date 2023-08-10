@@ -13,7 +13,7 @@
         </div>
 
         <div class="video-author">
-          Author: {{post.username}}
+          {{post.username}}
         </div>
 
         <div class="video-time">
@@ -30,20 +30,11 @@
           data-postid="{{post.id}}"></textarea>
         <input class="button" id="comment-button" type="submit" 
           value="Send Comment" data-postid="{{post.id}}" >
-        {{!-- <i class="button" aria-hidden="true"></i> --}}
       </div>
-      {{!-- {{log post.comments}} --}}
       <div id="comments-list" class = "comments">
           {{#each post.comments}}
             {{> comment this}}
           {{/each}}
-
-        {{!-- <div class = "comment">
-          <strong class="comment-author">anotherusername</strong>
-          <span class="comment-data">2022, Dec 12</span>
-          <div class="comment-text">This is a sample comment. This is a long comment. This is a cool video. </div>
-        </div> --}}
       </div>
-
     </div>  
   </main>

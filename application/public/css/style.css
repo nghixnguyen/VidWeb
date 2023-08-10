@@ -106,6 +106,7 @@ video{
 .video-time {
   font-size: .9rem;
   color: #777;
+  margin-top: .2rem;
 }
 
 .comment-box{
@@ -130,6 +131,7 @@ video{
 .comment-date {
   font-size: .9rem;
   color: #777;
+  padding: .6rem;
 }
 
 .comment-text {
@@ -245,6 +247,11 @@ video{
 
 .card-title:hover{
   text-decoration: underline;
+}
+
+.card-img{
+  height: 70%;
+  width: 100%;
 }
 
 .card-img:hover{
