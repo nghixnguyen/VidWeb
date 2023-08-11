@@ -25,8 +25,9 @@ http://localhost:3000/
     host: DB_HOST,
     user: DB_USER,
     password: DB_PASSWORD,
-    database: DB_NAME,
-3. npm run builddb
+    database: DB_NAME
+3. npm i dotenv
+4. npm run builddb
 
 ## Run Instructions
 1. npm start
