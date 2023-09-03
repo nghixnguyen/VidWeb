@@ -55,7 +55,7 @@ module.exports ={
             req.flash("error", "Email already exists!");
             req.session.save(function(err){
                 if (err) next(err);
-                return res.redirect("/registration");
+                    return res.redirect("/registration");
             })
         } else{
             next();

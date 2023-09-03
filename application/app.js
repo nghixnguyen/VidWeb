@@ -16,7 +16,6 @@ const usersRouter = require("./routes/users");
 const postsRouter = require("./routes/posts");
 const commentsRouter = require("./routes/comments");
 
-
 const app = express();
 
 const sessionStore = new MySQLStore(

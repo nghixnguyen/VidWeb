@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
     }
   })
   
-  const upload = multer({ storage: storage })
+const upload = multer({ storage: storage })
 
 router.post('/create', isLoggedIn, upload.single('uploadVideo'), makeThumbnail, async function(req,res,next){
     var {title, description} = req.body;

@@ -25,7 +25,6 @@ router.post("/create", isLoggedInJSON , async function(req,res,next){
                 message: "Could not create comment, try again later!"
             })
         }
-
     } catch (error){
         next(error);
     }

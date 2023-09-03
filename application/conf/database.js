@@ -7,6 +7,7 @@ const pool = mysql.createPool({
     database: process.env.DB_NAME,
     queueLimit: 0,
     waitForConnections: true
+    
 }).promise();
 
 module.exports = pool;

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "builddb": "node ./bin/dbloader",
-    "grade": "npm i && node ./bin/dbloader  && nodemon ./bin/www"
+    "grade": "npm i && node ./bin/dbloader && nodemon ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",

@@ -15,34 +15,6 @@ router.post("/registration",
   checkEmailExist, 
   async function(req, res, next) {
     var {username, email, password, confirmPassword} = req.body;
-    // res.locals.formdata = {
-    //   email,password,username
-    // }
-
-    // if(!validator.isAlpha(username.charAt(0))){
-    //   req.flash("error", "Username must be 3 or more characters");
-
-    //   // return res.send("Invalid First Letter of Username")
-    // }
-    // if(validator.isLength(username,{max:2})){
-    //   req.flash("error","Invalid Length of Username")
-    // }
-    // if(validator.isLength(password,{max:7})){
-    //   req.flash("error","Invalid Length of Password")
-    // }
-    // if (!validator.isStrongPassword(password)) {
-    //   req.flash("error","Password must contain at least one uppercase letter");
-    // }
-    // if (!validator.matches(password, /[0-9]/)) {
-    //   req.flash("error","Password must contain at least one number");
-    // }
-    // if (!validator.matches(password, /[/*\-+!\[\]@#$^&~]/)) {
-    //   req.flash("error","Password must contain at least one special character");
-    // }
-
-    // if (password !== confirmPassword) {
-    //   req.flash("error","Password must match");
-    // }
     try{
     
       var hashedPassword = await bcrypt.hash(password, 5);

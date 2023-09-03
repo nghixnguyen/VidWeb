@@ -70,7 +70,6 @@ module.exports = {
             ON fk_userId = u.id 
             ORDER BY p.createAt 
             DESC LIMIT 10`);
-        
             res.locals.results = results;        
             next();
         } catch (error) {
