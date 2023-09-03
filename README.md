@@ -1,18 +1,8 @@
-# CSC 317 Course Project
+ # VidWeb Web Application
 
 ## Purpose
 
-The purpose of this repository is to store all the code for your web application. This also includes the history of all commits made and who made them. Only code submitted on the master branch will be graded.
-
-Please follow the instructions below and fill in the information requested when prompted.
-
-## Student Information
-
-|               | Information       |
-|:-------------:|:-----------------:|
-| Student Name  | Nghi Nguyen       |
-| Student ID    | 923076697         |
-| Student Email | nnguyen13@sfsu.edu|
+This web application is a video platform, inspired by YouTube. VidWeb allows user to search and view posted videos, log in to create posts, and comment on posts.
 
 ## Link to Web Application: 
 http://localhost:3000/
