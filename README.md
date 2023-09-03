@@ -1,6 +1,6 @@
  # VidWeb Web Application
 
-## Purpose
+## Description
 
 This web application is a video platform, inspired by YouTube. VidWeb allows user to search and view posted videos, log in to create posts, and comment on posts.
 
